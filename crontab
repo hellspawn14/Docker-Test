@@ -1,0 +1,6 @@
+#5 * * * * sh /usr/local/Script/sample.sh >> /var/log/cron.log 2>&1
+#* * * * * sh /usr/local/Script/sample.sh > /proc/1/fd/1 2>/proc/1/fd/2
+# START CRON JOB
+* * * * * sh /usr/local/Script/sample.sh > /proc/1/fd/1 2>/proc/1/fd/2
+#* * * * * sh /usr/local/Script/sample.sh >> /var/log/cron.log
+# END CRON JOB
